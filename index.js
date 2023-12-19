@@ -26,19 +26,21 @@ function addToInventory(url){
 }
 
 function newInventory(){
-    inventory = document.createElement('div')
-    inventory.style.position = 'fixed'
-    inventory.style.bottom = '0px';
-    inventory.style.left = '0px'
-    inventory.style.width = '100%'
-    inventory.style.height = '100px'
-    inventory.style.display = 'flex'
-    inventory.style.flexDirection = 'row'
-    inventory.style.alignItems = 'center'
-    inventory.style.justifyContent = 'space-evenly'
-    inventory.style.border = '2px solid black'
-    inventory.style.backgroundColor = 'brown'
-    document.body.append(inventory)
+    let inventoryDiv = document.createElement('div')
+    inventoryDiv.style.position = 'fixed'
+    inventoryDiv.style.bottom = '0px'
+    inventoryDiv.style.left = '0px'
+    inventoryDiv.style.width = '100%'
+    inventoryDiv.style.height = '100px'
+    inventoryDiv.style.display = 'flex'
+    inventoryDiv.style.flexDirection = 'row'
+    inventoryDiv.style.alignItems = 'center'
+    inventoryDiv.style.justifyContent = 'space-evenly'
+    inventoryDiv.style.border = '2px solid black'
+    inventoryDiv.style.backgroundColor = 'brown'
+    document.body.append(inventoryDiv)
+    inventory = inventoryDiv
+    return inventory 
 }
 
 newInventory()
